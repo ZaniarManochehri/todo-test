@@ -12,6 +12,7 @@ import {CurveLayout, MIcon, MImage} from './index'
 import { TEXT_1, TEXT_2, TEXT_3 } from '../assets/string';
 
 export const Home = () => {
+    
     let {home} = styles;
   return(
 <Grid container spacing={2}>
