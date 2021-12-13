@@ -9,6 +9,7 @@ export const styles = {
 
         txt1: {
             color: 'white',
+            textAlign: 'center',
             marginRight: 10,
             marginLeft: 10
         },

@@ -25,8 +25,8 @@ export const Home = () => {
           <ContentComponent >
             <h1 style={home.txt1}>{TEXT_2}</h1>
             <h4 style={home.txt2}>{TEXT_3}</h4>
-            <MImage src={logo} top={260} right={200} />
-            <MImage src={logo} top={260} left={200} />
+            <MImage src={logo} top={260} right={150} />
+            <MImage src={logo} top={260} left={150} />
             <MImage src={logo} top={100} left={-100} />
             <MImage src={logo} top={100} right={-100} />
           </ContentComponent>
