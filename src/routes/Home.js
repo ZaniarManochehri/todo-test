@@ -6,13 +6,13 @@ import ContentComponent from '../components/ContentComponent';
 import Grid from '@mui/material/Grid';
 
 //Component
-import logo from '../logo.svg';
+import logo from '../assets/icon/logo.svg';
 import {styles} from '../assets/style';
 import {CurveLayout, MIcon, MImage} from './index'
 import { TEXT_1, TEXT_2, TEXT_3 } from '../assets/string';
 
 export const Home = () => {
-    
+
     let {home} = styles;
   return(
 <Grid container spacing={2}>
