@@ -6,9 +6,14 @@ import { TEXT_4 } from '../assets/string';
 
 const useStyles = makeStyles(theme => ({
     button: {
-        border: '4px solid',
+        border: '3px solid',
         color: 'white',
         backgroundColor: 'black',
+        width: 200,
+        height: 50,
+        alignSelf: 'center',
+        marginTop: 20,
+        borderRadius: 10,
     }
 }));
 
