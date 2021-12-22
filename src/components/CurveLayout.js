@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/style/index.css'
+import '../assets/style/index.css'
 
 function CurveLayout(props) {
     let { children } = props;

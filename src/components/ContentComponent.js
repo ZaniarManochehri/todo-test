@@ -1,5 +1,5 @@
 import React from 'react';
-import {styles} from '../../assets/style';
+import {styles} from '../loader';
 
 function ContentComponent(props) {
     let {children} = props;

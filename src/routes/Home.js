@@ -2,17 +2,31 @@ import React from 'react';
 import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
-import ContentComponent from '../components/layout/ContentComponent';
+import ContentComponent from '../components/ContentComponent';
 import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 
 //Component
-import logo from '../assets/icon/logo.svg';
-import { styles } from '../assets/style';
-import { CurveLayout, MButton, MIcon, MImage } from './index'
-import { TEST_1, TEST_2, TEST_3, TEST_4, TEST_5, TEXT_1, TEXT_2, TEXT_3 } from '../assets/string';
-import RowLayout from '../components/layout/RowLayout';
-import HStack from '../components/layout/HStack';
-import ColLayout from '../components/layout/ColLayout';
+import {
+  CurveLayout,
+  MButton,
+  MIcon,
+  MImage,
+  RowLayout,
+  ColLayout,
+  styles,
+  logo,
+} from '../loader'
+import {
+  TEST_1,
+  TEST_2,
+  TEST_3,
+  TEST_4,
+  TEST_5,
+  TEXT_1,
+  TEXT_2,
+  TEXT_3
+} from '../assets/string';
 
 export const Home = () => {
 
@@ -20,29 +34,29 @@ export const Home = () => {
   return (
     <Grid container spacing={2} style={{ minHeight: '100vh' }}>
       <Grid item xs={12}>
-        <CurveLayout >
-          <ContentComponent >
+        <CurveLayout>
+          <ContentComponent>
             <RowLayout>
-              <HStack>
+              <Stack direction="row" spacing={2}>
                 <MIcon name={<LocalPhoneOutlinedIcon />} text="15103" />
                 <p style={home.contactDesc}>{TEXT_1}</p>
-              </HStack>
-              <HStack>
+              </Stack>
+              <Stack direction="row" spacing={2}>
                 <MIcon name={<LanguageOutlinedIcon />} text="EN" />
                 <MIcon name={<ShoppingBasketOutlinedIcon />} text="" />
-              </HStack>
+              </Stack>
             </RowLayout>
             <RowLayout marginTop={10}>
-              <HStack>
+              <Stack direction="row" spacing={2}>
                 <span style={home.txt1}>{TEST_1}</span>
                 <span style={home.txt1}>{TEST_2}</span>
                 <span style={home.txt1}>{TEST_3}</span>
-              </HStack>
+              </Stack>
               <img src={logo} alt="logo" width="200" height="200" />
-              <HStack>
+              <Stack direction="row" spacing={2}>
                 <span style={home.txt1}>{TEST_4}</span>
                 <span style={home.txt1}>{TEST_5}</span>
-              </HStack>
+              </Stack>
             </RowLayout>
             <ColLayout marginBottom={20}>
               <h1 style={home.txt1}>{TEXT_2}</h1>

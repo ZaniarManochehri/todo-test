@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/style/index.css'
+import '../assets/style/index.css'
 
 function ColLayout(props) {
     let { children, marginTop = 0, marginBottom = 0 } = props;
